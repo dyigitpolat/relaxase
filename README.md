@@ -1,5 +1,4 @@
-# relaxase
-## Relaxase: An Updatable DNA-based Data Storage Framework
+# Relaxase: An Updatable DNA-based Data Storage Framework
 
 DNA-based data storage systems promise extreme data density. However in such systems, writing data means synthesizing DNA and DNA synthesis is very expensive. Thus, discarding DNA pools when just one file needs to be changed, is out of discussion. So, updates to existing data should use minimal writes. Reading from DNA is another non-trivial process. So an updatable design should aim minimal reads too. Currently available data patching methodologies generally expose the data content. Since, DNA data storage providers are not necessarily trustful entities, such an updatable data storage framework should also be privacy preserving. 
 
