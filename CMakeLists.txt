@@ -10,7 +10,7 @@ set(EXEC relaxase)
 # set the C++14 standard
 set(CMAKE_CXX_STANDARD 14)
 
-# I../includes
+# /include
 include_directories(include)
 
 # puts all .cpp files inside src to the SOURCES variable
