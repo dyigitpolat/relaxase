@@ -2,7 +2,7 @@
 
 #include <vector>
 
-#include "dna_strand.hpp"
+#include "dna_sector.hpp"
 
 class DNAPool
 {
@@ -11,5 +11,5 @@ public:
     virtual ~DNAPool();
 
 private:
-    std::vector<DNAStrand> strands;
+    std::vector<DNASector> sectors;
 };
