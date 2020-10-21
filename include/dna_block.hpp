@@ -7,8 +7,12 @@
 class DNABlock
 {
 public:
-    DNABlock();
-    virtual ~DNABlock();
+    DNABlock(); // default constructor
+    DNABlock(const DNABlock& other); // 1. copy constructor
+    DNABlock& operator=(const DNABlock& other); // 2. copy assignment
+    virtual ~DNABlock(); // 3. destructor
+    DNABlock(DNABlock&& other); // 4. move constructor
+    DNABlock& operator=(DNABlock&& other); // 5. move assignment
 
 private:
     std::vector<DNAStrand> strands;

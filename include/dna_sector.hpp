@@ -10,8 +10,12 @@
 class DNASector
 {
 public:
-    DNASector();
-    virtual ~DNASector();
+    DNASector(); // default constructor
+    DNASector(const DNASector& other); // 1. copy constructor
+    DNASector& operator=(const DNASector& other); // 2. copy assignment
+    virtual ~DNASector(); // 3. destructor
+    DNASector(DNASector&& other); // 4. move constructor
+    DNASector& operator=(DNASector&& other); // 5. move assignment
 
 private:
     std::vector<DNABlock> blocks;
