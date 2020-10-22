@@ -5,8 +5,3 @@ Relaxase::Relaxase()
 
 }
 
-
-Relaxase::~Relaxase()
-{
-    
-}
