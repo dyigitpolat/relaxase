@@ -33,3 +33,6 @@
 
 # Build folder
 /build
+
+# ignore vscode folder
+/.vscode
