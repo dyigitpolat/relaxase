@@ -7,11 +7,12 @@ class RelaxaseClient
 {
 public:
     RelaxaseClient(); // default constructor
-    int file_access(string file_name); // File Access 
+    int add_new_file(string file_name,uint8_t *in); 
+    int retrieve_file(string file_name,uint8_t *in); 
     
 
 private:
-    void write_to_binary_file( string fname,uint8_t p_Data); // Write Encrypted data to a binary file
-    void encrypt_cbc(uint8_t *in); // cbc encryption 
-    void decrypt_cbc(uint8_t *in); //cbc decryption
+    void write_to_binary_file( string fname,uint8_t p_Data); 
+    void encrypt_cbc(uint8_t *in);  
+    void decrypt_cbc(uint8_t *in); 
 };
