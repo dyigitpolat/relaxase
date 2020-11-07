@@ -1,0 +1,40 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/ayan/relaxase/src/relaxase_client.cpp
+stdio.h
+-
+string.h
+-
+stdint.h
+-
+iostream
+-
+fstream
+-
+vector
+-
+aes.hpp
+/home/ayan/relaxase/src/aes.hpp
+relaxase_client.hpp
+/home/ayan/relaxase/src/relaxase_client.hpp
+
+include/relaxase_client.hpp
+stdio.h
+-
+string.h
+-
+
+lib/tiny-AES-c/aes.h
+stdint.h
+-
+
+lib/tiny-AES-c/aes.hpp
+aes.h
+lib/tiny-AES-c/aes.h
+
