@@ -7,18 +7,18 @@
 using namespace std;
 
 
-// Enable ECB, CTR and CBC mode. Note this can be done before including aes.h or at compile-time.
-// E.g. with GCC by using the -D flag: gcc -c aes.c -DCBC=0 -DCTR=1 -DECB=1
+// Enable cbc, CTR and CBC mode. Note this can be done before including aes.h or at compile-time.
+// E.g. with GCC by using the -D flag: gcc -c aes.c -DCBC=0 -DCTR=1 -Dcbc=1
 #define CBC 1
 #define CTR 1
-#define ECB 1
+#define cbc 1
 
 #include "aes.hpp"
 #include "relaxase_client.hpp"
 
 uint8_t key[] = { 0x60, 0x3d, 0xeb, 0x10, 0x15, 0xca, 0x71, 0xbe, 0x2b, 0x73, 0xae, 0xf0, 0x85, 0x7d, 0x77, 0x81,
                       0x1f, 0x35, 0x2c, 0x07, 0x3b, 0x61, 0x08, 0xd7, 0x2d, 0x98, 0x10, 0xa3, 0x09, 0x14, 0xdf, 0xf4 };
-
+uint8_t iv[]  = { 0x00, 0x01, 0x02, 0x03, 0x04, 0x05, 0x06, 0x07, 0x08, 0x09, 0x0a, 0x0b, 0x0c, 0x0d, 0x0e, 0x0f };
 int count=0;
 
 RelaxaseClient::RelaxaseClient()
@@ -58,7 +58,7 @@ int RelaxaseClient:: file_access(string file_name)
     else cout << "Unable to open file"; 
 
    
-    for (unsigned i=0; i<count; ++i)
+    for (unsigned i=0; i<count; ++i) // Can remove in final code. Just to check Decoding
      {
    	 *(original+i)= *(in+i);
          
@@ -67,21 +67,21 @@ int RelaxaseClient:: file_access(string file_name)
    
 
    
-    encrypt_ecb(in);
+    encrypt_cbc(in);
       
     for (unsigned i=0; i<count; ++i)
     {
    	 write_to_binary_file(encrypt_file_name, *(in+i));
     } 
     
-    decrypt_ecb(in);
+    decrypt_cbc(in);
     
     for (unsigned i=0; i<count; ++i)
     {    
    	 write_to_binary_file(decrypt_file_name, *(in+i));
     } 
 
-   if (0 == memcmp((char*) in, (char*) original, count)) {
+   if (0 == memcmp((char*) in, (char*) original, count)) { // Can remove in final code. Just to check decoding
         printf("SUCCESS!\n");
 	return(0);
     } else {
@@ -91,26 +91,24 @@ int RelaxaseClient:: file_access(string file_name)
 }
 
 
-void RelaxaseClient::encrypt_ecb(uint8_t *in)
+void RelaxaseClient::encrypt_cbc(uint8_t *in)
 { 
   struct AES_ctx ctx;
-  AES_init_ctx(&ctx, key);
-  AES_ECB_encrypt(&ctx, in);
+  
+  AES_init_ctx_iv(&ctx, key, iv);
+  AES_CBC_encrypt_buffer(&ctx, in, count);
   
 }
 
 
-void RelaxaseClient::decrypt_ecb(uint8_t *in)
+void RelaxaseClient::decrypt_cbc(uint8_t *in)
 {
  
  struct AES_ctx ctx;
  
- AES_init_ctx(&ctx, key);
- AES_ECB_decrypt(&ctx, in);
+ AES_init_ctx_iv(&ctx, key, iv);
+ AES_CBC_decrypt_buffer(&ctx, in, count);
 
-for (unsigned i=0; i<count; ++i)
-    {    cout<< *(in+i);
-}
 }
 
 

@@ -12,6 +12,6 @@ public:
 
 private:
     void write_to_binary_file( string fname,uint8_t p_Data); // Write Encrypted data to a binary file
-    void encrypt_ecb(uint8_t *in); // ECB encryption 
-    void decrypt_ecb(uint8_t *in); //ECB decryption
+    void encrypt_cbc(uint8_t *in); // cbc encryption 
+    void decrypt_cbc(uint8_t *in); //cbc decryption
 };
