@@ -1,0 +1,13 @@
+# Target labels
+ project_schifra
+# Source files and their labels
+/home/ayan/relaxase/CMakeFiles/project_schifra
+/home/ayan/relaxase/CMakeFiles/project_schifra.rule
+/home/ayan/relaxase/CMakeFiles/project_schifra-complete.rule
+/home/ayan/relaxase/schifra/src/project_schifra-stamp/project_schifra-install.rule
+/home/ayan/relaxase/schifra/src/project_schifra-stamp/project_schifra-mkdir.rule
+/home/ayan/relaxase/schifra/src/project_schifra-stamp/project_schifra-download.rule
+/home/ayan/relaxase/schifra/src/project_schifra-stamp/project_schifra-update.rule
+/home/ayan/relaxase/schifra/src/project_schifra-stamp/project_schifra-patch.rule
+/home/ayan/relaxase/schifra/src/project_schifra-stamp/project_schifra-configure.rule
+/home/ayan/relaxase/schifra/src/project_schifra-stamp/project_schifra-build.rule

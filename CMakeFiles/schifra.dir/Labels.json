@@ -1,0 +1,43 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "/home/ayan/relaxase/CMakeFiles/schifra"
+		},
+		{
+			"file" : "/home/ayan/relaxase/CMakeFiles/schifra.rule"
+		},
+		{
+			"file" : "/home/ayan/relaxase/CMakeFiles/schifra-complete.rule"
+		},
+		{
+			"file" : "/home/ayan/relaxase/schifra/src/schifra-stamp/schifra-install.rule"
+		},
+		{
+			"file" : "/home/ayan/relaxase/schifra/src/schifra-stamp/schifra-mkdir.rule"
+		},
+		{
+			"file" : "/home/ayan/relaxase/schifra/src/schifra-stamp/schifra-download.rule"
+		},
+		{
+			"file" : "/home/ayan/relaxase/schifra/src/schifra-stamp/schifra-update.rule"
+		},
+		{
+			"file" : "/home/ayan/relaxase/schifra/src/schifra-stamp/schifra-patch.rule"
+		},
+		{
+			"file" : "/home/ayan/relaxase/schifra/src/schifra-stamp/schifra-configure.rule"
+		},
+		{
+			"file" : "/home/ayan/relaxase/schifra/src/schifra-stamp/schifra-build.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"schifra"
+		],
+		"name" : "schifra"
+	}
+}

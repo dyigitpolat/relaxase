@@ -1,0 +1,3 @@
+repository='https://github.com/tierney/reed-solomon.git'
+module=''
+tag='origin'

@@ -1,0 +1,43 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "/home/ayan/relaxase/CMakeFiles/reed-solomon-master"
+		},
+		{
+			"file" : "/home/ayan/relaxase/CMakeFiles/reed-solomon-master.rule"
+		},
+		{
+			"file" : "/home/ayan/relaxase/CMakeFiles/reed-solomon-master-complete.rule"
+		},
+		{
+			"file" : "/home/ayan/relaxase/reed-solomon-master-prefix/src/reed-solomon-master-stamp/reed-solomon-master-install.rule"
+		},
+		{
+			"file" : "/home/ayan/relaxase/reed-solomon-master-prefix/src/reed-solomon-master-stamp/reed-solomon-master-mkdir.rule"
+		},
+		{
+			"file" : "/home/ayan/relaxase/reed-solomon-master-prefix/src/reed-solomon-master-stamp/reed-solomon-master-download.rule"
+		},
+		{
+			"file" : "/home/ayan/relaxase/reed-solomon-master-prefix/src/reed-solomon-master-stamp/reed-solomon-master-update.rule"
+		},
+		{
+			"file" : "/home/ayan/relaxase/reed-solomon-master-prefix/src/reed-solomon-master-stamp/reed-solomon-master-patch.rule"
+		},
+		{
+			"file" : "/home/ayan/relaxase/reed-solomon-master-prefix/src/reed-solomon-master-stamp/reed-solomon-master-configure.rule"
+		},
+		{
+			"file" : "/home/ayan/relaxase/reed-solomon-master-prefix/src/reed-solomon-master-stamp/reed-solomon-master-build.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"reed-solomon-master"
+		],
+		"name" : "reed-solomon-master"
+	}
+}
