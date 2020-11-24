@@ -2,6 +2,4 @@
 
 DNALibrary::DNALibrary()
 {
-
-} 
-
+}

@@ -2,5 +2,4 @@
 
 DNATest::DNATest()
 {
-
-} 
+}

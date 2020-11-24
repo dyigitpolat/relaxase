@@ -2,5 +2,4 @@
 
 DNAStrand::DNAStrand()
 {
-
-} 
+}

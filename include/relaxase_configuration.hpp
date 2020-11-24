@@ -7,7 +7,7 @@ class RelaxaseConfiguration
 
 public:
     void initialize(
-        const uint32_t addressing_depth, 
+        const uint32_t addressing_depth,
         const uint32_t block_size,
         const uint32_t strand_length,
         const uint32_t primer_length);

@@ -2,7 +2,7 @@
 
 #include <string>
 
-class DNAStrand 
+class DNAStrand
 {
 public:
     DNAStrand(); // default constructor

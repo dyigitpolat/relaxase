@@ -2,5 +2,4 @@
 
 DNABlock::DNABlock()
 {
-
-} 
+}

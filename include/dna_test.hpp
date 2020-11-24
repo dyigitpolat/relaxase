@@ -10,5 +10,4 @@ public:
     DNATest(); // default constructor
 
 private:
-    
 };

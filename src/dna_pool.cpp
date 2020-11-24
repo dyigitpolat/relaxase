@@ -2,5 +2,4 @@
 
 DNAPool::DNAPool()
 {
-
-} 
+}

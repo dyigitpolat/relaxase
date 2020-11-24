@@ -2,5 +2,4 @@
 
 DNASector::DNASector()
 {
-
-} 
+}

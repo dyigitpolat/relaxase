@@ -2,17 +2,15 @@
 
 RelaxaseConfiguration *RelaxaseConfiguration::instance = 0;
 
-RelaxaseConfiguration::RelaxaseConfiguration() :
-    addressing_depth(0),
-    block_size(0),
-    strand_length(0),
-    primer_length(0)
+RelaxaseConfiguration::RelaxaseConfiguration() : addressing_depth(0),
+                                                 block_size(0),
+                                                 strand_length(0),
+                                                 primer_length(0)
 {
-
 }
 
 void RelaxaseConfiguration::initialize(
-    const uint32_t addressing_depth, 
+    const uint32_t addressing_depth,
     const uint32_t block_size,
     const uint32_t strand_length,
     const uint32_t primer_length)
@@ -23,9 +21,10 @@ void RelaxaseConfiguration::initialize(
     this->primer_length = primer_length;
 }
 
-RelaxaseConfiguration* RelaxaseConfiguration::get_instance()
+RelaxaseConfiguration *RelaxaseConfiguration::get_instance()
 {
-    if(!instance) instance = new RelaxaseConfiguration;
+    if (!instance)
+        instance = new RelaxaseConfiguration;
     return instance;
 }
 

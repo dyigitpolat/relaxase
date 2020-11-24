@@ -2,5 +2,4 @@
 
 DNAPatch::DNAPatch()
 {
-
-} 
+}

@@ -11,5 +11,4 @@ public:
 
 private:
     std::vector<DNAPool> pools;
-
 };
