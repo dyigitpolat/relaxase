@@ -4,4 +4,3 @@ DNABlock::DNABlock()
 {
 
 } 
-
