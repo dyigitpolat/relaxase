@@ -89,9 +89,22 @@ CMakeFiles/relaxase.dir/src/dna_block.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/relaxase.dir/src/dna_block.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ayan/relaxase/src/dna_block.cpp -o CMakeFiles/relaxase.dir/src/dna_block.cpp.s
 
+CMakeFiles/relaxase.dir/src/dna_decoder.cpp.o: CMakeFiles/relaxase.dir/flags.make
+CMakeFiles/relaxase.dir/src/dna_decoder.cpp.o: src/dna_decoder.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ayan/relaxase/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/relaxase.dir/src/dna_decoder.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/relaxase.dir/src/dna_decoder.cpp.o -c /home/ayan/relaxase/src/dna_decoder.cpp
+
+CMakeFiles/relaxase.dir/src/dna_decoder.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/relaxase.dir/src/dna_decoder.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ayan/relaxase/src/dna_decoder.cpp > CMakeFiles/relaxase.dir/src/dna_decoder.cpp.i
+
+CMakeFiles/relaxase.dir/src/dna_decoder.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/relaxase.dir/src/dna_decoder.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ayan/relaxase/src/dna_decoder.cpp -o CMakeFiles/relaxase.dir/src/dna_decoder.cpp.s
+
 CMakeFiles/relaxase.dir/src/dna_library.cpp.o: CMakeFiles/relaxase.dir/flags.make
 CMakeFiles/relaxase.dir/src/dna_library.cpp.o: src/dna_library.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ayan/relaxase/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/relaxase.dir/src/dna_library.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ayan/relaxase/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/relaxase.dir/src/dna_library.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/relaxase.dir/src/dna_library.cpp.o -c /home/ayan/relaxase/src/dna_library.cpp
 
 CMakeFiles/relaxase.dir/src/dna_library.cpp.i: cmake_force
@@ -104,7 +117,7 @@ CMakeFiles/relaxase.dir/src/dna_library.cpp.s: cmake_force
 
 CMakeFiles/relaxase.dir/src/dna_patch.cpp.o: CMakeFiles/relaxase.dir/flags.make
 CMakeFiles/relaxase.dir/src/dna_patch.cpp.o: src/dna_patch.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ayan/relaxase/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/relaxase.dir/src/dna_patch.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ayan/relaxase/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/relaxase.dir/src/dna_patch.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/relaxase.dir/src/dna_patch.cpp.o -c /home/ayan/relaxase/src/dna_patch.cpp
 
 CMakeFiles/relaxase.dir/src/dna_patch.cpp.i: cmake_force
@@ -117,7 +130,7 @@ CMakeFiles/relaxase.dir/src/dna_patch.cpp.s: cmake_force
 
 CMakeFiles/relaxase.dir/src/dna_pool.cpp.o: CMakeFiles/relaxase.dir/flags.make
 CMakeFiles/relaxase.dir/src/dna_pool.cpp.o: src/dna_pool.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ayan/relaxase/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/relaxase.dir/src/dna_pool.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ayan/relaxase/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/relaxase.dir/src/dna_pool.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/relaxase.dir/src/dna_pool.cpp.o -c /home/ayan/relaxase/src/dna_pool.cpp
 
 CMakeFiles/relaxase.dir/src/dna_pool.cpp.i: cmake_force
@@ -130,7 +143,7 @@ CMakeFiles/relaxase.dir/src/dna_pool.cpp.s: cmake_force
 
 CMakeFiles/relaxase.dir/src/dna_sector.cpp.o: CMakeFiles/relaxase.dir/flags.make
 CMakeFiles/relaxase.dir/src/dna_sector.cpp.o: src/dna_sector.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ayan/relaxase/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/relaxase.dir/src/dna_sector.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ayan/relaxase/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/relaxase.dir/src/dna_sector.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/relaxase.dir/src/dna_sector.cpp.o -c /home/ayan/relaxase/src/dna_sector.cpp
 
 CMakeFiles/relaxase.dir/src/dna_sector.cpp.i: cmake_force
@@ -143,7 +156,7 @@ CMakeFiles/relaxase.dir/src/dna_sector.cpp.s: cmake_force
 
 CMakeFiles/relaxase.dir/src/dna_strand.cpp.o: CMakeFiles/relaxase.dir/flags.make
 CMakeFiles/relaxase.dir/src/dna_strand.cpp.o: src/dna_strand.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ayan/relaxase/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/relaxase.dir/src/dna_strand.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ayan/relaxase/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/relaxase.dir/src/dna_strand.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/relaxase.dir/src/dna_strand.cpp.o -c /home/ayan/relaxase/src/dna_strand.cpp
 
 CMakeFiles/relaxase.dir/src/dna_strand.cpp.i: cmake_force
@@ -154,9 +167,22 @@ CMakeFiles/relaxase.dir/src/dna_strand.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/relaxase.dir/src/dna_strand.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ayan/relaxase/src/dna_strand.cpp -o CMakeFiles/relaxase.dir/src/dna_strand.cpp.s
 
+CMakeFiles/relaxase.dir/src/dna_test.cpp.o: CMakeFiles/relaxase.dir/flags.make
+CMakeFiles/relaxase.dir/src/dna_test.cpp.o: src/dna_test.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ayan/relaxase/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/relaxase.dir/src/dna_test.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/relaxase.dir/src/dna_test.cpp.o -c /home/ayan/relaxase/src/dna_test.cpp
+
+CMakeFiles/relaxase.dir/src/dna_test.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/relaxase.dir/src/dna_test.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ayan/relaxase/src/dna_test.cpp > CMakeFiles/relaxase.dir/src/dna_test.cpp.i
+
+CMakeFiles/relaxase.dir/src/dna_test.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/relaxase.dir/src/dna_test.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ayan/relaxase/src/dna_test.cpp -o CMakeFiles/relaxase.dir/src/dna_test.cpp.s
+
 CMakeFiles/relaxase.dir/src/main.cpp.o: CMakeFiles/relaxase.dir/flags.make
 CMakeFiles/relaxase.dir/src/main.cpp.o: src/main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ayan/relaxase/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/relaxase.dir/src/main.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ayan/relaxase/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/relaxase.dir/src/main.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/relaxase.dir/src/main.cpp.o -c /home/ayan/relaxase/src/main.cpp
 
 CMakeFiles/relaxase.dir/src/main.cpp.i: cmake_force
@@ -169,7 +195,7 @@ CMakeFiles/relaxase.dir/src/main.cpp.s: cmake_force
 
 CMakeFiles/relaxase.dir/src/relaxase.cpp.o: CMakeFiles/relaxase.dir/flags.make
 CMakeFiles/relaxase.dir/src/relaxase.cpp.o: src/relaxase.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ayan/relaxase/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/relaxase.dir/src/relaxase.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ayan/relaxase/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/relaxase.dir/src/relaxase.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/relaxase.dir/src/relaxase.cpp.o -c /home/ayan/relaxase/src/relaxase.cpp
 
 CMakeFiles/relaxase.dir/src/relaxase.cpp.i: cmake_force
@@ -182,7 +208,7 @@ CMakeFiles/relaxase.dir/src/relaxase.cpp.s: cmake_force
 
 CMakeFiles/relaxase.dir/src/relaxase_client.cpp.o: CMakeFiles/relaxase.dir/flags.make
 CMakeFiles/relaxase.dir/src/relaxase_client.cpp.o: src/relaxase_client.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ayan/relaxase/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/relaxase.dir/src/relaxase_client.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ayan/relaxase/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/relaxase.dir/src/relaxase_client.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/relaxase.dir/src/relaxase_client.cpp.o -c /home/ayan/relaxase/src/relaxase_client.cpp
 
 CMakeFiles/relaxase.dir/src/relaxase_client.cpp.i: cmake_force
@@ -195,7 +221,7 @@ CMakeFiles/relaxase.dir/src/relaxase_client.cpp.s: cmake_force
 
 CMakeFiles/relaxase.dir/src/relaxase_configuration.cpp.o: CMakeFiles/relaxase.dir/flags.make
 CMakeFiles/relaxase.dir/src/relaxase_configuration.cpp.o: src/relaxase_configuration.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ayan/relaxase/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/relaxase.dir/src/relaxase_configuration.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ayan/relaxase/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/relaxase.dir/src/relaxase_configuration.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/relaxase.dir/src/relaxase_configuration.cpp.o -c /home/ayan/relaxase/src/relaxase_configuration.cpp
 
 CMakeFiles/relaxase.dir/src/relaxase_configuration.cpp.i: cmake_force
@@ -209,11 +235,13 @@ CMakeFiles/relaxase.dir/src/relaxase_configuration.cpp.s: cmake_force
 # Object files for target relaxase
 relaxase_OBJECTS = \
 "CMakeFiles/relaxase.dir/src/dna_block.cpp.o" \
+"CMakeFiles/relaxase.dir/src/dna_decoder.cpp.o" \
 "CMakeFiles/relaxase.dir/src/dna_library.cpp.o" \
 "CMakeFiles/relaxase.dir/src/dna_patch.cpp.o" \
 "CMakeFiles/relaxase.dir/src/dna_pool.cpp.o" \
 "CMakeFiles/relaxase.dir/src/dna_sector.cpp.o" \
 "CMakeFiles/relaxase.dir/src/dna_strand.cpp.o" \
+"CMakeFiles/relaxase.dir/src/dna_test.cpp.o" \
 "CMakeFiles/relaxase.dir/src/main.cpp.o" \
 "CMakeFiles/relaxase.dir/src/relaxase.cpp.o" \
 "CMakeFiles/relaxase.dir/src/relaxase_client.cpp.o" \
@@ -223,19 +251,22 @@ relaxase_OBJECTS = \
 relaxase_EXTERNAL_OBJECTS =
 
 relaxase: CMakeFiles/relaxase.dir/src/dna_block.cpp.o
+relaxase: CMakeFiles/relaxase.dir/src/dna_decoder.cpp.o
 relaxase: CMakeFiles/relaxase.dir/src/dna_library.cpp.o
 relaxase: CMakeFiles/relaxase.dir/src/dna_patch.cpp.o
 relaxase: CMakeFiles/relaxase.dir/src/dna_pool.cpp.o
 relaxase: CMakeFiles/relaxase.dir/src/dna_sector.cpp.o
 relaxase: CMakeFiles/relaxase.dir/src/dna_strand.cpp.o
+relaxase: CMakeFiles/relaxase.dir/src/dna_test.cpp.o
 relaxase: CMakeFiles/relaxase.dir/src/main.cpp.o
 relaxase: CMakeFiles/relaxase.dir/src/relaxase.cpp.o
 relaxase: CMakeFiles/relaxase.dir/src/relaxase_client.cpp.o
 relaxase: CMakeFiles/relaxase.dir/src/relaxase_configuration.cpp.o
 relaxase: CMakeFiles/relaxase.dir/build.make
 relaxase: lib/tiny-AES-c/libtiny-aes.a
+relaxase: lib/schifra_dir/libschifra.a
 relaxase: CMakeFiles/relaxase.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/ayan/relaxase/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Linking CXX executable relaxase"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/ayan/relaxase/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Linking CXX executable relaxase"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/relaxase.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

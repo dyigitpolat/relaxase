@@ -45,6 +45,7 @@ endif()
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
   include("/home/ayan/relaxase/lib/tiny-AES-c/cmake_install.cmake")
+  include("/home/ayan/relaxase/lib/schifra_dir/cmake_install.cmake")
 
 endif()
 

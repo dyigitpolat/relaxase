@@ -155,6 +155,19 @@ tiny-aes/fast:
 	$(MAKE) $(MAKESILENT) -f lib/tiny-AES-c/CMakeFiles/tiny-aes.dir/build.make lib/tiny-AES-c/CMakeFiles/tiny-aes.dir/build
 .PHONY : tiny-aes/fast
 
+#=============================================================================
+# Target rules for targets named schifra
+
+# Build rule for target.
+schifra: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 schifra
+.PHONY : schifra
+
+# fast build rule for target.
+schifra/fast:
+	$(MAKE) $(MAKESILENT) -f lib/schifra_dir/CMakeFiles/schifra.dir/build.make lib/schifra_dir/CMakeFiles/schifra.dir/build
+.PHONY : schifra/fast
+
 src/dna_block.o: src/dna_block.cpp.o
 
 .PHONY : src/dna_block.o
@@ -181,6 +194,33 @@ src/dna_block.s: src/dna_block.cpp.s
 src/dna_block.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/relaxase.dir/build.make CMakeFiles/relaxase.dir/src/dna_block.cpp.s
 .PHONY : src/dna_block.cpp.s
+
+src/dna_decoder.o: src/dna_decoder.cpp.o
+
+.PHONY : src/dna_decoder.o
+
+# target to build an object file
+src/dna_decoder.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/relaxase.dir/build.make CMakeFiles/relaxase.dir/src/dna_decoder.cpp.o
+.PHONY : src/dna_decoder.cpp.o
+
+src/dna_decoder.i: src/dna_decoder.cpp.i
+
+.PHONY : src/dna_decoder.i
+
+# target to preprocess a source file
+src/dna_decoder.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/relaxase.dir/build.make CMakeFiles/relaxase.dir/src/dna_decoder.cpp.i
+.PHONY : src/dna_decoder.cpp.i
+
+src/dna_decoder.s: src/dna_decoder.cpp.s
+
+.PHONY : src/dna_decoder.s
+
+# target to generate assembly for a file
+src/dna_decoder.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/relaxase.dir/build.make CMakeFiles/relaxase.dir/src/dna_decoder.cpp.s
+.PHONY : src/dna_decoder.cpp.s
 
 src/dna_library.o: src/dna_library.cpp.o
 
@@ -317,6 +357,33 @@ src/dna_strand.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/relaxase.dir/build.make CMakeFiles/relaxase.dir/src/dna_strand.cpp.s
 .PHONY : src/dna_strand.cpp.s
 
+src/dna_test.o: src/dna_test.cpp.o
+
+.PHONY : src/dna_test.o
+
+# target to build an object file
+src/dna_test.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/relaxase.dir/build.make CMakeFiles/relaxase.dir/src/dna_test.cpp.o
+.PHONY : src/dna_test.cpp.o
+
+src/dna_test.i: src/dna_test.cpp.i
+
+.PHONY : src/dna_test.i
+
+# target to preprocess a source file
+src/dna_test.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/relaxase.dir/build.make CMakeFiles/relaxase.dir/src/dna_test.cpp.i
+.PHONY : src/dna_test.cpp.i
+
+src/dna_test.s: src/dna_test.cpp.s
+
+.PHONY : src/dna_test.s
+
+# target to generate assembly for a file
+src/dna_test.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/relaxase.dir/build.make CMakeFiles/relaxase.dir/src/dna_test.cpp.s
+.PHONY : src/dna_test.cpp.s
+
 src/main.o: src/main.cpp.o
 
 .PHONY : src/main.o
@@ -434,10 +501,14 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... relaxase"
+	@echo "... schifra"
 	@echo "... tiny-aes"
 	@echo "... src/dna_block.o"
 	@echo "... src/dna_block.i"
 	@echo "... src/dna_block.s"
+	@echo "... src/dna_decoder.o"
+	@echo "... src/dna_decoder.i"
+	@echo "... src/dna_decoder.s"
 	@echo "... src/dna_library.o"
 	@echo "... src/dna_library.i"
 	@echo "... src/dna_library.s"
@@ -453,6 +524,9 @@ help:
 	@echo "... src/dna_strand.o"
 	@echo "... src/dna_strand.i"
 	@echo "... src/dna_strand.s"
+	@echo "... src/dna_test.o"
+	@echo "... src/dna_test.i"
+	@echo "... src/dna_test.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"

@@ -18,6 +18,7 @@ file(GLOB SOURCES src/*.cpp)
 
 # STATICALLY LINKED LIBRARIES
 add_subdirectory(lib/tiny-AES-c)
+add_subdirectory(lib/schifra_dir)
 
 
 # compiles the files defined by SOURCES to generante the executable defined by EXEC
@@ -25,5 +26,5 @@ add_executable(${EXEC} ${SOURCES})
 
 # Link libraries
 target_link_libraries(${EXEC} tiny-aes)
-
+target_link_libraries(${EXEC} schifra)
 

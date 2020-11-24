@@ -44,17 +44,18 @@ int RelaxaseClient:: add_new_file(string file_name, uint8_t *in)
 
    if (myfile.is_open())
     {
-     while ( getline (myfile,line) )
-     	
+     while ( getline (myfile,line) )     	
      for (unsigned i=0; i<line.length(); ++i)
      {
-       *(in+count)=(unsigned char)line.at(i);
-       count=count + 1;
+      *(in+count)=(unsigned char)line.at(i);
+      
+      count=count + 1;
         
      }
+     
      myfile.close();
     }
-
+    
     else cout << "Unable to open file"; 
 
    
@@ -82,12 +83,33 @@ return(count);
 
 int RelaxaseClient:: retrieve_file(string file_name, uint8_t *in){
 
+  //static_assert(std::is_same<unsigned char, uint8_t>::value, "uint8_t is not unsigned char"); 
+  
+  uint8_t *data;
+  string text_file = file_name + ".dat" ;
   string decrypt_file_name=file_name + "_decrypt.dat";
-  decrypt_cbc(in);
+  ifstream myfile(text_file,ios::in|ios::binary|ios::app);
+  
+    if (!myfile) {
+        std::cout << "Error: input file could not be opened." << std::endl;
+        return 1;
+    }
+
+   // copies all data into buffer
+   std::vector<unsigned char> buffer(std::istreambuf_iterator<char>(myfile), {});
+   data = &buffer[0];
+   myfile.close();
+ 
+
+   count=buffer.size();
+  
+  
+   
+  decrypt_cbc(data);
     
   for (unsigned i=0; i<count; ++i)
     {    
-   	write_to_binary_file(decrypt_file_name, *(in+i));
+   	write_to_binary_file(decrypt_file_name, *(data+i));
     }  
    
   /*if (0 == memcmp((char*) in, (char*) original, count)) { // Can remove in final code. Just to check decoding
@@ -97,6 +119,7 @@ int RelaxaseClient:: retrieve_file(string file_name, uint8_t *in){
         printf("FAILURE!\n");
 	return(1);
     }*/
+return(count);
  
 } 
 

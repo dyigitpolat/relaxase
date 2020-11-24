@@ -1,3 +1,6 @@
 [submodule "lib/tiny-AES-c"]
 	path = lib/tiny-AES-c
 	url = https://github.com/kokke/tiny-AES-c.git
+[submodule "lib/schifra_dir/schifra"]
+	path = lib/schifra_dir/schifra
+	url = https://github.com/ArashPartow/schifra.git

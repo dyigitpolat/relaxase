@@ -1,3 +1,0 @@
-repository='external project URL'
-module='https://www.schifra.com/downloads/schifra.tgz'
-tag=''

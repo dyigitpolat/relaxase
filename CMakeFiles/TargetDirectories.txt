@@ -4,3 +4,6 @@
 /home/ayan/relaxase/lib/tiny-AES-c/CMakeFiles/rebuild_cache.dir
 /home/ayan/relaxase/lib/tiny-AES-c/CMakeFiles/edit_cache.dir
 /home/ayan/relaxase/lib/tiny-AES-c/CMakeFiles/tiny-aes.dir
+/home/ayan/relaxase/lib/schifra_dir/CMakeFiles/rebuild_cache.dir
+/home/ayan/relaxase/lib/schifra_dir/CMakeFiles/edit_cache.dir
+/home/ayan/relaxase/lib/schifra_dir/CMakeFiles/schifra.dir

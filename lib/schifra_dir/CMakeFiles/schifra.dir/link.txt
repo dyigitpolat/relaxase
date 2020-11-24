@@ -1,0 +1,2 @@
+/usr/bin/ar qc libschifra.a 
+/usr/bin/ranlib libschifra.a

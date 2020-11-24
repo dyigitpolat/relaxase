@@ -11,6 +11,7 @@ set(CMAKE_MAKEFILE_DEPENDS
   "CMakeFiles/3.18.4/CMakeCXXCompiler.cmake"
   "CMakeFiles/3.18.4/CMakeSystem.cmake"
   "CMakeLists.txt"
+  "lib/schifra_dir/CMakeLists.txt"
   "lib/tiny-AES-c/CMakeLists.txt"
   "/opt/cmake-3.18.4-Linux-x86_64/share/cmake-3.18/Modules/CMakeCInformation.cmake"
   "/opt/cmake-3.18.4-Linux-x86_64/share/cmake-3.18/Modules/CMakeCXXInformation.cmake"
@@ -43,10 +44,12 @@ set(CMAKE_MAKEFILE_OUTPUTS
 set(CMAKE_MAKEFILE_PRODUCTS
   "CMakeFiles/CMakeDirectoryInformation.cmake"
   "lib/tiny-AES-c/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "lib/schifra_dir/CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/relaxase.dir/DependInfo.cmake"
   "lib/tiny-AES-c/CMakeFiles/tiny-aes.dir/DependInfo.cmake"
+  "lib/schifra_dir/CMakeFiles/schifra.dir/DependInfo.cmake"
   )

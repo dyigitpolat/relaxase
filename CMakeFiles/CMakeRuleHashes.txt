@@ -1,9 +1,0 @@
-# Hashes of file build rules.
-f4ecf37658d504a6b4467c9f64430860 reed-solomon-master-prefix/src/reed-solomon-master-stamp/reed-solomon-master-download
-c9906682721941297818709dd5105e4b reed-solomon-master-prefix/src/reed-solomon-master-stamp/reed-solomon-master-mkdir
-f541a565a14a6737ce71f3570a42a59c reed-solomon-master-prefix/src/reed-solomon-master-stamp/reed-solomon-master-patch
-584dc9c126d47bd19563558cf5bf470f schifra/src/schifra-stamp/schifra-configure
-ee89bb391ca77170358578c440f465b1 schifra/src/schifra-stamp/schifra-download
-7ec7406c2598e2af608ac40e1154e59a schifra/src/schifra-stamp/schifra-mkdir
-196cfae15f1f9e29b5d0a183c1b579a4 schifra/src/schifra-stamp/schifra-patch
-79b70fb0767ac7b65c49bea2b26f3331 schifra/src/schifra-stamp/schifra-update

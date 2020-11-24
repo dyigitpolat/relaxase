@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/home/ayan/relaxase/include -I/home/ayan/relaxase/lib/tiny-AES-c
+CXX_INCLUDES = -I/home/ayan/relaxase/include -I/home/ayan/relaxase/lib/tiny-AES-c -I/home/ayan/relaxase/lib/schifra_dir/schifra
 
 CXX_FLAGS = -std=gnu++14
 
