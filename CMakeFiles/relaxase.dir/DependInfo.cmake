@@ -6,11 +6,13 @@ set(CMAKE_DEPENDS_LANGUAGES
 set(CMAKE_DEPENDS_CHECK_CXX
   "/home/ayan/relaxase/src/dna_block.cpp" "/home/ayan/relaxase/CMakeFiles/relaxase.dir/src/dna_block.cpp.o"
   "/home/ayan/relaxase/src/dna_decoder.cpp" "/home/ayan/relaxase/CMakeFiles/relaxase.dir/src/dna_decoder.cpp.o"
+  "/home/ayan/relaxase/src/dna_encoder.cpp" "/home/ayan/relaxase/CMakeFiles/relaxase.dir/src/dna_encoder.cpp.o"
   "/home/ayan/relaxase/src/dna_library.cpp" "/home/ayan/relaxase/CMakeFiles/relaxase.dir/src/dna_library.cpp.o"
   "/home/ayan/relaxase/src/dna_patch.cpp" "/home/ayan/relaxase/CMakeFiles/relaxase.dir/src/dna_patch.cpp.o"
   "/home/ayan/relaxase/src/dna_pool.cpp" "/home/ayan/relaxase/CMakeFiles/relaxase.dir/src/dna_pool.cpp.o"
   "/home/ayan/relaxase/src/dna_sector.cpp" "/home/ayan/relaxase/CMakeFiles/relaxase.dir/src/dna_sector.cpp.o"
   "/home/ayan/relaxase/src/dna_strand.cpp" "/home/ayan/relaxase/CMakeFiles/relaxase.dir/src/dna_strand.cpp.o"
+  "/home/ayan/relaxase/src/dna_superblock.cpp" "/home/ayan/relaxase/CMakeFiles/relaxase.dir/src/dna_superblock.cpp.o"
   "/home/ayan/relaxase/src/dna_test.cpp" "/home/ayan/relaxase/CMakeFiles/relaxase.dir/src/dna_test.cpp.o"
   "/home/ayan/relaxase/src/main.cpp" "/home/ayan/relaxase/CMakeFiles/relaxase.dir/src/main.cpp.o"
   "/home/ayan/relaxase/src/relaxase.cpp" "/home/ayan/relaxase/CMakeFiles/relaxase.dir/src/relaxase.cpp.o"

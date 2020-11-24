@@ -13,8 +13,8 @@ relaxase.hpp
 /home/ayan/relaxase/src/relaxase.hpp
 relaxase_client.hpp
 /home/ayan/relaxase/src/relaxase_client.hpp
-dna_decoder.hpp
-/home/ayan/relaxase/src/dna_decoder.hpp
+dna_encoder.hpp
+/home/ayan/relaxase/src/dna_encoder.hpp
 
 include/dna_block.hpp
 vector
@@ -24,7 +24,7 @@ string.h
 dna_strand.hpp
 include/dna_strand.hpp
 
-include/dna_decoder.hpp
+include/dna_encoder.hpp
 vector
 -
 string.h

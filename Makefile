@@ -222,6 +222,33 @@ src/dna_decoder.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/relaxase.dir/build.make CMakeFiles/relaxase.dir/src/dna_decoder.cpp.s
 .PHONY : src/dna_decoder.cpp.s
 
+src/dna_encoder.o: src/dna_encoder.cpp.o
+
+.PHONY : src/dna_encoder.o
+
+# target to build an object file
+src/dna_encoder.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/relaxase.dir/build.make CMakeFiles/relaxase.dir/src/dna_encoder.cpp.o
+.PHONY : src/dna_encoder.cpp.o
+
+src/dna_encoder.i: src/dna_encoder.cpp.i
+
+.PHONY : src/dna_encoder.i
+
+# target to preprocess a source file
+src/dna_encoder.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/relaxase.dir/build.make CMakeFiles/relaxase.dir/src/dna_encoder.cpp.i
+.PHONY : src/dna_encoder.cpp.i
+
+src/dna_encoder.s: src/dna_encoder.cpp.s
+
+.PHONY : src/dna_encoder.s
+
+# target to generate assembly for a file
+src/dna_encoder.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/relaxase.dir/build.make CMakeFiles/relaxase.dir/src/dna_encoder.cpp.s
+.PHONY : src/dna_encoder.cpp.s
+
 src/dna_library.o: src/dna_library.cpp.o
 
 .PHONY : src/dna_library.o
@@ -356,6 +383,33 @@ src/dna_strand.s: src/dna_strand.cpp.s
 src/dna_strand.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/relaxase.dir/build.make CMakeFiles/relaxase.dir/src/dna_strand.cpp.s
 .PHONY : src/dna_strand.cpp.s
+
+src/dna_superblock.o: src/dna_superblock.cpp.o
+
+.PHONY : src/dna_superblock.o
+
+# target to build an object file
+src/dna_superblock.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/relaxase.dir/build.make CMakeFiles/relaxase.dir/src/dna_superblock.cpp.o
+.PHONY : src/dna_superblock.cpp.o
+
+src/dna_superblock.i: src/dna_superblock.cpp.i
+
+.PHONY : src/dna_superblock.i
+
+# target to preprocess a source file
+src/dna_superblock.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/relaxase.dir/build.make CMakeFiles/relaxase.dir/src/dna_superblock.cpp.i
+.PHONY : src/dna_superblock.cpp.i
+
+src/dna_superblock.s: src/dna_superblock.cpp.s
+
+.PHONY : src/dna_superblock.s
+
+# target to generate assembly for a file
+src/dna_superblock.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/relaxase.dir/build.make CMakeFiles/relaxase.dir/src/dna_superblock.cpp.s
+.PHONY : src/dna_superblock.cpp.s
 
 src/dna_test.o: src/dna_test.cpp.o
 
@@ -509,6 +563,9 @@ help:
 	@echo "... src/dna_decoder.o"
 	@echo "... src/dna_decoder.i"
 	@echo "... src/dna_decoder.s"
+	@echo "... src/dna_encoder.o"
+	@echo "... src/dna_encoder.i"
+	@echo "... src/dna_encoder.s"
 	@echo "... src/dna_library.o"
 	@echo "... src/dna_library.i"
 	@echo "... src/dna_library.s"
@@ -524,6 +581,9 @@ help:
 	@echo "... src/dna_strand.o"
 	@echo "... src/dna_strand.i"
 	@echo "... src/dna_strand.s"
+	@echo "... src/dna_superblock.o"
+	@echo "... src/dna_superblock.i"
+	@echo "... src/dna_superblock.s"
 	@echo "... src/dna_test.o"
 	@echo "... src/dna_test.i"
 	@echo "... src/dna_test.s"

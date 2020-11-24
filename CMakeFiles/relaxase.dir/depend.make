@@ -16,6 +16,20 @@ CMakeFiles/relaxase.dir/src/dna_decoder.cpp.o: lib/schifra_dir/schifra/schifra_r
 CMakeFiles/relaxase.dir/src/dna_decoder.cpp.o: lib/schifra_dir/schifra/schifra_reed_solomon_decoder.hpp
 CMakeFiles/relaxase.dir/src/dna_decoder.cpp.o: lib/schifra_dir/schifra/schifra_reed_solomon_encoder.hpp
 
+CMakeFiles/relaxase.dir/src/dna_encoder.cpp.o: src/dna_encoder.cpp
+CMakeFiles/relaxase.dir/src/dna_encoder.cpp.o: include/dna_encoder.hpp
+CMakeFiles/relaxase.dir/src/dna_encoder.cpp.o: include/dna_strand.hpp
+CMakeFiles/relaxase.dir/src/dna_encoder.cpp.o: lib/schifra_dir/schifra/schifra_crc.hpp
+CMakeFiles/relaxase.dir/src/dna_encoder.cpp.o: lib/schifra_dir/schifra/schifra_ecc_traits.hpp
+CMakeFiles/relaxase.dir/src/dna_encoder.cpp.o: lib/schifra_dir/schifra/schifra_error_processes.hpp
+CMakeFiles/relaxase.dir/src/dna_encoder.cpp.o: lib/schifra_dir/schifra/schifra_fileio.hpp
+CMakeFiles/relaxase.dir/src/dna_encoder.cpp.o: lib/schifra_dir/schifra/schifra_galois_field.hpp
+CMakeFiles/relaxase.dir/src/dna_encoder.cpp.o: lib/schifra_dir/schifra/schifra_galois_field_element.hpp
+CMakeFiles/relaxase.dir/src/dna_encoder.cpp.o: lib/schifra_dir/schifra/schifra_galois_field_polynomial.hpp
+CMakeFiles/relaxase.dir/src/dna_encoder.cpp.o: lib/schifra_dir/schifra/schifra_reed_solomon_block.hpp
+CMakeFiles/relaxase.dir/src/dna_encoder.cpp.o: lib/schifra_dir/schifra/schifra_reed_solomon_decoder.hpp
+CMakeFiles/relaxase.dir/src/dna_encoder.cpp.o: lib/schifra_dir/schifra/schifra_reed_solomon_encoder.hpp
+
 CMakeFiles/relaxase.dir/src/dna_library.cpp.o: src/dna_library.cpp
 CMakeFiles/relaxase.dir/src/dna_library.cpp.o: include/dna_block.hpp
 CMakeFiles/relaxase.dir/src/dna_library.cpp.o: include/dna_library.hpp
@@ -44,12 +58,17 @@ CMakeFiles/relaxase.dir/src/dna_sector.cpp.o: include/dna_strand.hpp
 CMakeFiles/relaxase.dir/src/dna_strand.cpp.o: src/dna_strand.cpp
 CMakeFiles/relaxase.dir/src/dna_strand.cpp.o: include/dna_strand.hpp
 
+CMakeFiles/relaxase.dir/src/dna_superblock.cpp.o: src/dna_superblock.cpp
+CMakeFiles/relaxase.dir/src/dna_superblock.cpp.o: include/dna_block.hpp
+CMakeFiles/relaxase.dir/src/dna_superblock.cpp.o: include/dna_strand.hpp
+CMakeFiles/relaxase.dir/src/dna_superblock.cpp.o: include/dna_superblock.hpp
+
 CMakeFiles/relaxase.dir/src/dna_test.cpp.o: src/dna_test.cpp
 CMakeFiles/relaxase.dir/src/dna_test.cpp.o: include/dna_test.hpp
 
 CMakeFiles/relaxase.dir/src/main.cpp.o: src/main.cpp
 CMakeFiles/relaxase.dir/src/main.cpp.o: include/dna_block.hpp
-CMakeFiles/relaxase.dir/src/main.cpp.o: include/dna_decoder.hpp
+CMakeFiles/relaxase.dir/src/main.cpp.o: include/dna_encoder.hpp
 CMakeFiles/relaxase.dir/src/main.cpp.o: include/dna_library.hpp
 CMakeFiles/relaxase.dir/src/main.cpp.o: include/dna_patch.hpp
 CMakeFiles/relaxase.dir/src/main.cpp.o: include/dna_pool.hpp

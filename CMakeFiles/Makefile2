@@ -135,12 +135,12 @@ CMakeFiles/relaxase.dir/all: lib/tiny-AES-c/CMakeFiles/tiny-aes.dir/all
 CMakeFiles/relaxase.dir/all: lib/schifra_dir/CMakeFiles/schifra.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/relaxase.dir/build.make CMakeFiles/relaxase.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/relaxase.dir/build.make CMakeFiles/relaxase.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ayan/relaxase/CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9,10,11,12,13 "Built target relaxase"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ayan/relaxase/CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9,10,11,12,13,14,15 "Built target relaxase"
 .PHONY : CMakeFiles/relaxase.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/relaxase.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ayan/relaxase/CMakeFiles 16
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ayan/relaxase/CMakeFiles 18
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/relaxase.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/ayan/relaxase/CMakeFiles 0
 .PHONY : CMakeFiles/relaxase.dir/rule
@@ -162,7 +162,7 @@ CMakeFiles/relaxase.dir/clean:
 lib/tiny-AES-c/CMakeFiles/tiny-aes.dir/all:
 	$(MAKE) $(MAKESILENT) -f lib/tiny-AES-c/CMakeFiles/tiny-aes.dir/build.make lib/tiny-AES-c/CMakeFiles/tiny-aes.dir/depend
 	$(MAKE) $(MAKESILENT) -f lib/tiny-AES-c/CMakeFiles/tiny-aes.dir/build.make lib/tiny-AES-c/CMakeFiles/tiny-aes.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ayan/relaxase/CMakeFiles --progress-num=15,16 "Built target tiny-aes"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ayan/relaxase/CMakeFiles --progress-num=17,18 "Built target tiny-aes"
 .PHONY : lib/tiny-AES-c/CMakeFiles/tiny-aes.dir/all
 
 # Build rule for subdir invocation for target.
@@ -189,7 +189,7 @@ lib/tiny-AES-c/CMakeFiles/tiny-aes.dir/clean:
 lib/schifra_dir/CMakeFiles/schifra.dir/all:
 	$(MAKE) $(MAKESILENT) -f lib/schifra_dir/CMakeFiles/schifra.dir/build.make lib/schifra_dir/CMakeFiles/schifra.dir/depend
 	$(MAKE) $(MAKESILENT) -f lib/schifra_dir/CMakeFiles/schifra.dir/build.make lib/schifra_dir/CMakeFiles/schifra.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ayan/relaxase/CMakeFiles --progress-num=14 "Built target schifra"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ayan/relaxase/CMakeFiles --progress-num=16 "Built target schifra"
 .PHONY : lib/schifra_dir/CMakeFiles/schifra.dir/all
 
 # Build rule for subdir invocation for target.

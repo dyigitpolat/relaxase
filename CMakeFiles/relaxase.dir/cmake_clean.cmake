@@ -1,11 +1,13 @@
 file(REMOVE_RECURSE
   "CMakeFiles/relaxase.dir/src/dna_block.cpp.o"
   "CMakeFiles/relaxase.dir/src/dna_decoder.cpp.o"
+  "CMakeFiles/relaxase.dir/src/dna_encoder.cpp.o"
   "CMakeFiles/relaxase.dir/src/dna_library.cpp.o"
   "CMakeFiles/relaxase.dir/src/dna_patch.cpp.o"
   "CMakeFiles/relaxase.dir/src/dna_pool.cpp.o"
   "CMakeFiles/relaxase.dir/src/dna_sector.cpp.o"
   "CMakeFiles/relaxase.dir/src/dna_strand.cpp.o"
+  "CMakeFiles/relaxase.dir/src/dna_superblock.cpp.o"
   "CMakeFiles/relaxase.dir/src/dna_test.cpp.o"
   "CMakeFiles/relaxase.dir/src/main.cpp.o"
   "CMakeFiles/relaxase.dir/src/relaxase.cpp.o"
