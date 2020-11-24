@@ -16,7 +16,7 @@ int main()
     //r.retrieve_file("example",in);
     std::cout << "Finished encryption" << std::endl;
     DNACoder coder;
-    coder.encode_file("example_encrypt.dat", 10000, 0, 1 , "data/proirity_file.txt", "data/encoded_file.txt"); //output_file.txt contains encoded DNA strands
+    coder.encode_file("data/example_encrypt.dat", 10000, 0, 1 , "data/proirity_file.txt", "data/encoded_file.txt"); //output_file.txt contains encoded DNA strands
     std::cout << "Finished encoding" << std::endl;
     coder.decode_file("data/encoded_file.txt",10000,0,1, "data/proirity_file.txt", "data/decoded_file.dat"); //decoded_output.txt contains decoded data
     std::cout << "Finished decoding" << std::endl;
