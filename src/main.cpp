@@ -1,8 +1,7 @@
 #include <iostream>
 #include "relaxase.hpp"
 #include "relaxase_client.hpp"
-#include "dna_encoder.hpp"
-//#include "dna_decoder.hpp"
+#include "dna_coder.hpp"
 
 int main()
 {
@@ -16,11 +15,12 @@ int main()
    
     //r.retrieve_file("example",in);
     std::cout << "Finished encryption" << std::endl;
-    DNAEncoder encoder;
-    encoder.encode_file("example_encrypt.dat", 10000, 0, 1 , "proirity_file.txt", "output_file.txt"); //output_file.txt contains encoded DNA strands
+    DNACoder coder;
+    coder.encode_file("data/example_encrypt.dat", 10000, 0, 1 , "data/proirity_file.txt", "data/encoded_file.txt"); //output_file.txt contains encoded DNA strands
     std::cout << "Finished encoding" << std::endl;
-    //DNADecoder decoder;
-    //decoder.decode_file("output_file.txt",10000,0,1, "proirity_file.txt", "decoded_output.dat"); //decoded_output.txt contains decoded data
-    //r.retrieve_file("decoded_output",ou);
+    coder.decode_file("data/encoded_file.txt",10000,0,1, "data/proirity_file.txt", "data/decoded_file.dat"); //decoded_output.txt contains decoded data
+    std::cout << "Finished decoding" << std::endl;
+    r.retrieve_file("data/decoded_file",ou);
+    std::cout << "Finished decryption" << std::endl;
     return 0;
 }

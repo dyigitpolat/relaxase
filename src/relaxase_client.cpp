@@ -36,8 +36,8 @@ int RelaxaseClient:: add_new_file(string file_name, uint8_t *in)
    
    string line;
 
-   string text_file = file_name + ".txt" ;
-   string encrypt_file_name=file_name + "_encrypt.dat";
+   string text_file = "data/" + file_name + ".txt" ;
+   string encrypt_file_name="data/"+file_name + "_encrypt.dat";
    
    ifstream myfile (text_file);
       
