@@ -44,12 +44,13 @@ std::vector<char> Relaxase::retrieve_file(const std::string &filename)
     return bytes;
 }
 
-
 int Relaxase::update_file(const std::string &filename, const std::vector<char> &new_patch)
 {
     std::vector<char> bytes;
     std::string dna_string;
     std::vector<DNAStrand> strands;
+    int strand_length = RelaxaseConfiguration::get_instance()->get_strand_length();
+
     FileAttributes fa;
     if(files.find(filename) != files.end())
     {
@@ -59,6 +60,36 @@ int Relaxase::update_file(const std::string &filename, const std::vector<char> &
     {
         throw "no such file";
     }
+
+    PatchAttributes pa;
+    pa.number_of_strands = strands.size();
+    pa.extension_pool = -1;
+    pa.extension_sector = -1;
+    pa.extension_superblock = -1;
+
+    char* pa_bytes = reinterpret_cast<char*>(&pa);
+    for(int i = 0; i < sizeof(pa); i++)
+    {
+        bytes.push_back(pa_bytes[i]);
+    }
+
+    std::string dna_attributes = bytes_to_dna(bytes);
+    int attrib_len = dna_attributes.length();
+
+    if(strand_length != dna_attributes.length())
+    {
+        for(int i = 0; i < strand_length - (attrib_len % strand_length); i++)
+        {
+            dna_attributes += "A";
+        }
+    }
+    
+    dna_string = bytes_to_dna(new_patch);
+
+    dna_string = dna_attributes + dna_string;
+    strands = generate_strands(dna_string);
+
+    lib.add_patch(fa, strands, dna_attributes.length() / strand_length);
 
     return 0;
 }

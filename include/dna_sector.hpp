@@ -23,6 +23,7 @@ public:
     std::vector<DNASuperBlock> superblocks;
     VirtualAttributes add_file(const std::vector<DNAStrand> &strands);
     std::vector<DNAStrand> retrieve_file(const VirtualAttributes &va) const;
+    int add_patch(const VirtualAttributes &va, const std::vector<DNAStrand> &strands, int num_attrib_strands);
 
 private:
     int next_available_superblock;

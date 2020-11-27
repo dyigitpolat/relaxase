@@ -30,3 +30,9 @@ std::vector<DNAStrand> DNAPool::retrieve_file(const LogicalAttributes &la) const
 {
     return sectors[la.sector_id].retrieve_file(la.virtual_attributes);
 }
+
+
+int DNAPool::add_patch(const LogicalAttributes &la, const std::vector<DNAStrand> &strands, int num_attrib_strands)
+{
+    return sectors[la.sector_id].add_patch(la.virtual_attributes, strands, num_attrib_strands);
+}

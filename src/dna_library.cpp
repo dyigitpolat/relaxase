@@ -29,3 +29,9 @@ std::vector<DNAStrand> DNALibrary::retrieve_file(const FileAttributes &fa) const
 {
     return pools[fa.pool_id].retrieve_file(fa.logical_attributes);
 }
+
+
+int DNALibrary::add_patch(const FileAttributes &fa, const std::vector<DNAStrand> &strands, int num_attrib_strands)
+{
+    return pools[fa.pool_id].add_patch(fa.logical_attributes, strands, num_attrib_strands);
+}

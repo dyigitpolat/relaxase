@@ -40,5 +40,8 @@ int main()
 
     std::cout << linux_apply_patch("aaabbb", linux_diff("aaabbb", "aaacccbbb")) << std::endl;
 
+    r.create_file( "2", coder.string_to_bytes("aaabbb") );
+    r.update_file("2", coder.string_to_bytes("aaacccbbb"));
+
     return 0;
 }

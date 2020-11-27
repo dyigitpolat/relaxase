@@ -7,6 +7,14 @@
 #include "dna_library.hpp"
 #include "dna_coder.hpp"
 
+struct PatchAttributes
+{
+    uint16_t number_of_strands;
+    uint16_t extension_pool;
+    uint16_t extension_sector;
+    uint32_t extension_superblock;
+};
+
 class Relaxase
 {
 public:

@@ -52,3 +52,33 @@ std::vector<DNAStrand> DNASector::retrieve_file(const VirtualAttributes &va) con
 
     return strands;
 }
+
+
+int DNASector::add_patch(const VirtualAttributes &va, const std::vector<DNAStrand> &strands, int num_attrib_strands)
+{
+    int block_size = RelaxaseConfiguration::get_instance()->get_block_size();
+    int num_update_blocks = RelaxaseConfiguration::get_instance()->get_blocks_per_superblock() - 1;
+
+    for(int i = 0; i < va.number_of_superblocks; i++)
+    {
+        for( int k = 0; k < num_update_blocks; k++)
+        {
+            for(int j = 0; j < block_size; j++)
+            {
+                if(i*block_size*num_update_blocks + k*block_size + j < strands.size())
+                {
+                    superblocks[va.superblock_id+i]
+                        .patch_blocks[k]
+                        .strands
+                        .push_back(strands[i*block_size*num_update_blocks + k*block_size + j]);
+                }
+                else
+                {
+                    break;
+                }
+            }
+        }
+    }
+
+    return 0;
+}
