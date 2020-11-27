@@ -4,20 +4,26 @@
 #include <string>
 #include <inttypes.h>
 
-#include "dna_block.hpp"
+#include "dna_superblock.hpp"
 #include "dna_patch.hpp"
+
+struct VirtualAttributes
+{
+    int superblock_id;
+    int number_of_superblocks;
+};
+
 
 class DNASector
 {
 public:
     DNASector(); // default constructor
 
+    int sector_id;
+    std::vector<DNASuperBlock> superblocks;
+    VirtualAttributes add_file(const std::vector<DNAStrand> &strands);
+    std::vector<DNAStrand> retrieve_file(const VirtualAttributes &va) const;
+
 private:
-    std::vector<DNABlock> blocks;
-    std::vector<DNAPatch> patches;
-
-    std::string primer_one;
-    std::string primer_two;
-
-    uint32_t patch_pointer;
+    int next_available_superblock;
 };

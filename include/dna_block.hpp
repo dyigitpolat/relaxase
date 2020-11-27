@@ -10,6 +10,5 @@ class DNABlock
 public:
     DNABlock(); // default constructor
 
-private:
     std::vector<DNAStrand> strands;
 };

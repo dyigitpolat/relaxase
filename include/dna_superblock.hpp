@@ -9,6 +9,9 @@ class DNASuperBlock
 public:
     DNASuperBlock(); // default constructor
 
-private:
-    std::vector<DNABlock> strands;
+    std::vector<DNAStrand> retrieve_data() const;
+
+    DNABlock data_block;
+    std::vector<DNABlock> patch_blocks;
+    
 };

@@ -30,7 +30,6 @@ RelaxaseClient::RelaxaseClient()
 
 int RelaxaseClient::add_new_file(string file_name, uint8_t *in)
 {
-
     string line;
 
     string text_file = file_name + ".txt";

@@ -34,6 +34,18 @@ std::string DNACoder::ordToDNA(uint16_t ord) //16 bits
     return s;
 }
 
+std::string DNACoder::byteToDNA(char c) //8 bits
+{
+    std::string s = "";
+    for (int i = 0; i < 4; i++)
+    {
+        s += DNA[c % 4];
+        c = c >> 2;
+    }
+    reverse(s.begin(), s.end());
+    return s;
+}
+
 std::string DNACoder::symbolToDNA(unsigned char c1, unsigned char c2)
 {
     std::string s = "";
@@ -338,6 +350,32 @@ int DNACoder::DNAtoOrd(std::string strand)
     }
     return res;
 }
+
+char DNACoder::DNAtoByte(std::string strand)
+{
+    char res = 0;
+    for (int i = 0; i < 4; i++)
+    {
+        res = res << 2;
+        switch (strand.at(i))
+        {
+        case 'A':
+            res += 0;
+            break;
+        case 'C':
+            res += 1;
+            break;
+        case 'G':
+            res += 2;
+            break;
+        case 'T':
+            res += 3;
+            break;
+        }
+    }
+    return res;
+}
+
 unsigned char DNACoder::DNAtoC1(std::string strand, int row)
 {
     unsigned char res = 0;
@@ -500,7 +538,6 @@ void DNACoder::WriteRSMatrixByColumn(int inputSize, char decoded_matrix[][data_l
 
 int DNACoder ::decode_file(string file_name, int file_size, int mapping_format, int skip_ECC_enable, string proirity_def_file, string output_file)
 {
-
     int inputSize = file_size;
     int total_symbols = RS_ROWS * code_length;
     int total_bytes = 2 * total_symbols;
@@ -648,4 +685,17 @@ int DNACoder ::decode_file(string file_name, int file_size, int mapping_format, 
         WriteRSMatrixByPriority(inputSize, proirity_def_file, decoded_matrix, output_file);
 
     return 0;
+}
+
+
+std::vector<char> DNACoder::string_to_bytes(std::string text)
+{
+    std::vector<char> bytes;
+    for(int i = 0; i < text.length(); i++)
+    {
+        bytes.push_back(text[i]);
+    }
+    bytes.push_back(0);
+
+    return bytes;   
 }

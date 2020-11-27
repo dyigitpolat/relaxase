@@ -9,6 +9,5 @@ class DNAPatch
 public:
     DNAPatch(); // default constructor
 
-private:
     std::vector<DNAStrand> strands;
 };

@@ -15,6 +15,11 @@ public:
     int encode_file(string file_name, int file_size, int mapping_format, int skip_ECC_enable, string proirity_file, string output_file);
     int decode_file(string file_name, int file_size, int mapping_format, int skip_ECC_enable, string proirity_def_file, string output_file);
 
+    std::vector<char> string_to_bytes(std::string text);
+
+    std::string byteToDNA(char c);
+    char DNAtoByte(std::string strand);
+
 private:
     std::vector<DNAStrand> strands;
     std::string ordToDNA(uint16_t ord);

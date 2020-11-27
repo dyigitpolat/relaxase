@@ -5,8 +5,8 @@
 class DNAStrand
 {
 public:
-    DNAStrand(); // default constructor
+    DNAStrand(int address, std::string data); // default constructor
 
-private:
+    int address;
     std::string data;
 };

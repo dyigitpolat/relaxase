@@ -1,5 +1,8 @@
 #include "dna_strand.hpp"
 
-DNAStrand::DNAStrand()
+DNAStrand::DNAStrand(int address, std::string data) :
+    address(address),
+    data(data)
 {
+    
 }
