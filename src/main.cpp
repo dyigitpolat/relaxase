@@ -3,6 +3,7 @@
 #include "relaxase.hpp"
 #include "relaxase_configuration.hpp"
 #include "dna_coder.hpp"
+#include "linux_util.hpp"
 
 int main()
 {
@@ -36,6 +37,8 @@ int main()
     std::string retrieved_string = &retrieved_bytes[0];
 
     std::cout << retrieved_string << std::endl;
+
+    std::cout << linux_apply_patch("aaabbb", linux_diff("aaabbb", "aaacccbbb")) << std::endl;
 
     return 0;
 }
